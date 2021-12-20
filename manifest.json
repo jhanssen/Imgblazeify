@@ -4,29 +4,24 @@
   "name": "Imgblazeify",
   "version": "1.0",
 
-  "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "description": "Redirect directly to imgblaze image.",
+  "homepage_url": "https://github.com/jhanssen/imgblazeify",
   "icons": {
-    "48": "icons/beasts-48.png"
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "64": "icons/icon64.png"
   },
 
   "permissions": [
     "activeTab"
   ],
 
-    "background": {
-        "scripts": ["background.js"]
-    },
-
-  "browser_action": {
-    "default_icon": "icons/beasts-32.png",
-    "default_title": "Imgblazeify"
+  "background": {
+    "scripts": ["background.js"]
   },
 
-  "web_accessible_resources": [
-    "beasts/frog.jpg",
-    "beasts/turtle.jpg",
-    "beasts/snake.jpg"
-  ]
-
+  "browser_action": {
+    "default_icon": "icons/icon32.png",
+    "default_title": "Imgblazeify"
+  }
 }
